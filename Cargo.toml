@@ -1,0 +1,15 @@
+[package]
+name = "hde-rs"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["hde-sys"]
+
+[dependencies]
+hde-sys = { path = "hde-sys" }
+
+[features]
+default = []
+# Export hde-sys subcrate to use raw FFI APIs.
+hde-sys = []
